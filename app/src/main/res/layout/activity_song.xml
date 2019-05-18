@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SongActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imv_track"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/txv_nombreCancion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre Canción"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/imv_track"
+android:layout_centerHorizontal="true"            />
+
+        <TextView
+            android:id="@+id/txv_artista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Artista Canción"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_below="@+id/txv_nombreCancion"/>
+
+        <TextView
+            android:id="@+id/txv_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artista Canción"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="10sp" android:layout_below="@+id/txv_artista"/>
+
+        <TextView
+            android:id="@+id/txv_duracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txv_album"
+            android:layout_centerHorizontal="true"
+            android:text="Duración Cancion"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_escuchar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txv_duracion"
+            android:layout_centerHorizontal="true"
+            android:text="Escuchar"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
